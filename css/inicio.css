@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('../fuentes/GlacialIndifference-Regular.otf') format('truetype');    
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    background-color: #fcce4e;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoNav{
+    width: 105px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: auto;
+}
+#contenedor-buscador{
+    display: flex;
+    justify-content: center;
+}
+#buscadorNav{
+    width: 80%;
+    background-color: #272d34;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fcce4e;
+}
+#contenedor-linkCategoria{
+    display: flex;
+    justify-content: center;
+    
+}
+#botonCategoria{
+    background-color: #fcce4e;
+    border: none;
+    color: #272d34;
+    font-size: 40px;
+    
+}
+/* ------------------------------------------------ */
+/*DropDown_CATEGORIA*/
+#contenedor-categorias{
+    margin-top: 17%;
+    border: 1px solid black;
+    gap: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #3e4752;
+    display: none;
+}
+#contenedor-categorias button{
+    font-family: 'GlacialIndifference';
+    font-size: 13px;
+    padding: 15px;
+    background-color: #272d34;
+    border: none;
+    color: #fcce4e;
+    border-radius: 3px;
+}
+
+/*DropDown_SUBCATEGORIA_Alimentos_y_Bebidas*/
+#contenedor-subcat-AlimentosYBebidas{
+    margin-top: 17%;
+    margin-bottom: 20%;
+    position: fixed;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    gap: 10px;
+    overflow-y: hidden;
+    overflow: scroll;
+}
+.subcat-AlimentosYBebidas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GlacialIndifference';
+    flex-direction: column;
+    padding: 10px;
+}
+.subcat-AlimentosYBebidas a{
+    text-decoration: none;
+    padding: 5px;
+}
+.titulo-Subcategoria{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/*  Footer  */
+
+footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #fcce4e;
+
+}
